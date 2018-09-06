@@ -1,3 +1,226 @@
 *{
   font-family: "Garamond";
+  font-size: 16px;
 }
+
+h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p, span{
+  font-size: 1rem;
+}
+
+#logo-text{
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+/*Containers*/
+
+.container-a{
+  margin: 0 1.5rem;
+}
+
+.container-b{
+  margin: 0 4.5rem;
+}
+
+.bg-gray{
+  background-color: gray;
+}
+
+.bg-white{
+  background-color: white;
+}
+
+.content{
+  display: flex;
+  padding: 2rem 0rem;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.divider{
+  height:4rem;
+}
+
+/*Header navigation*/
+.navigation{
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  position: fixed;
+  background-color: white;
+  padding: 0rem 1.5rem;
+  width: 97%;
+}
+
+.logo{
+  display: flex;
+  flex-grow: 1;
+}
+
+.logo span{
+  display: flex;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li{
+  padding: 0 0.5rem;
+}
+
+/*Spotlight*/
+
+.spotlight-img{
+  width: 60%;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0.75rem;
+}
+
+.spotlight-img img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.spotlight-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0.75rem;
+}
+
+.spotlight-text h1, .spotlight-text h2{
+  padding:1rem 0;
+}
+
+.btn{
+  display: flex;
+  background-color: green;
+  width: 100%;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.btn span{
+  padding: 1rem;
+  color: white;
+}
+
+/*About Academy*/
+
+.practice-img{
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0.75rem;
+}
+
+.practice-img img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.practice{
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.feature-img{
+  width: 35%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.feature-img img{
+  max-width: 100%
+}
+
+.feature{
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+
+.feature-text{
+  width: 65%;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*Programs*/
+.programs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#startlearning{
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.program-img{
+  width: 100%;
+  height: auto;
+}
+
+.program-img img{
+  width: 100%;
+}
+
+.program-info{
+  width: 30%;
+  margin: 2rem 0rem;
+}
+
+/*Exhibit*/
+.thesis-video{
+  width: 60%;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.thesis-video video{
+  width: 100%;
+}
+
+.thesis{
+  display: flex;
+}
+/*Footer*/
