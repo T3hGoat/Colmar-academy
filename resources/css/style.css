@@ -209,7 +209,7 @@ nav ul li{
 
 /*Exhibit*/
 .thesis-video{
-  width: 60%;
+  width: 100%;
   display: flex;
   overflow: hidden;
   justify-content: center;
@@ -220,7 +220,17 @@ nav ul li{
   width: 100%;
 }
 
+.vid-text{
+  width: 60%;
+}
+
 .thesis{
   display: flex;
 }
 /*Footer*/
+
+footer{
+  padding: 4rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
