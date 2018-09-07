@@ -1,7 +1,5 @@
 *{
-  font-family: "IBM Plex Sans", sans-serif;
   font-size: 16px;
-  line-height: 1.5rem;
 }
 
 h1, h2, p, span, li{
@@ -56,8 +54,6 @@ p, span{
 .content{
   display: flex;
   padding: 2rem 0rem;
-  justify-content: space-between;
-  margin: 0 auto;
 }
 
 .divider{
@@ -109,11 +105,8 @@ nav ul li:hover{
 /*Spotlight*/
 
 .spotlight-img{
-  width: 60%;
   display: flex;
-  overflow: hidden;
   align-items: center;
-  margin-right: 0.75rem;
 }
 
 img{
@@ -124,7 +117,7 @@ img{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 2rem;
+  padding-left: 1.5rem;
 }
 
 .spotlight-text h1, .spotlight-text h2{
@@ -134,10 +127,9 @@ img{
 .btn{
   display: flex;
   background-color: #353535;
-  width: 100%;
   justify-content: center;
   border-radius: 10px;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .btn:hover{
@@ -151,7 +143,7 @@ img{
 }
 
 /*About Academy*/
-.practice{
+.practice, .vid-text{
   display: flex;
   width: 60%;
   flex-direction: column;
@@ -178,16 +170,12 @@ img{
 
 .feature-img{
   width: 35%;
-  height: auto;
   display: flex;
-  overflow: hidden;
   align-items: center;
 }
 
 .feature{
   display: flex;
-  justify-content: space-between;
-  height: auto;
 }
 
 .feature-text{
@@ -208,6 +196,10 @@ img{
   transition: background-color 0.5s linear;
 }
 
+#quote{
+  font-style: italic;
+}
+
 /*Programs*/
 .programs{
   display: flex;
@@ -222,7 +214,6 @@ img{
 
 .program-img{
   width: 100%;
-  height: auto;
 }
 
 .program-info{
@@ -238,7 +229,7 @@ img{
 }
 
 .class-list h2, .class-list p{
-  padding: 0.5rem 0 0.5rem 0;
+  padding: 0.5rem 0;
 }
 
 .class-list p{
@@ -253,8 +244,6 @@ img{
 .thesis-video{
   width: 100%;
   display: flex;
-  overflow: hidden;
-  justify-content: center;
   align-items: center;
 }
 
@@ -262,13 +251,13 @@ img{
   width: 100%;
 }
 
-.vid-text{
-  width: 60%;
-}
-
 .thesis{
   display: flex;
   padding-top: 2rem;
+}
+
+.thesis-list{
+  justify-content: space-around;
 }
 
 /*Footer*/
