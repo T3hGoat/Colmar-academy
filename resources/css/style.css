@@ -1,6 +1,18 @@
 *{
-  font-family: "Garamond";
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 16px;
+  line-height: 1.5rem;
+}
+
+h1, h2, p, span, li{
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #353535;
+}
+
+a{
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #3638AD;
+  text-decoration: none;
 }
 
 h1{
@@ -15,6 +27,7 @@ h2{
 
 p, span{
   font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 #logo-text{
@@ -33,11 +46,11 @@ p, span{
 }
 
 .bg-gray{
-  background-color: gray;
+  background-color: #C9C9C9;
 }
 
 .bg-white{
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .content{
@@ -60,6 +73,7 @@ p, span{
   background-color: white;
   padding: 0rem 1.5rem;
   width: 97%;
+  z-index: 5;
 }
 
 .logo{
@@ -70,6 +84,12 @@ p, span{
 .logo span{
   display: flex;
   align-items: center;
+  font-weight: bold;
+}
+
+.logo span:last-child{
+  opacity: 0.4;
+  font-weight: normal;
 }
 
 nav ul{
@@ -81,64 +101,56 @@ nav ul li{
   padding: 0 0.5rem;
 }
 
+nav ul li:hover{
+  opacity: 0.5;
+  font-weight: bold;
+}
+
 /*Spotlight*/
 
 .spotlight-img{
   width: 60%;
   display: flex;
   overflow: hidden;
-  justify-content: center;
   align-items: center;
-  padding-right: 0.75rem;
+  margin-right: 0.75rem;
 }
 
-.spotlight-img img{
+img{
   max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 .spotlight-text{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 0.75rem;
+  padding-left: 2rem;
 }
 
 .spotlight-text h1, .spotlight-text h2{
-  padding:1rem 0;
+  padding: 1.5rem 0;
 }
 
 .btn{
   display: flex;
-  background-color: green;
+  background-color: #353535;
   width: 100%;
   justify-content: center;
-  font-weight: bold;
   border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.btn:hover{
+  background-color: #EA6848;
 }
 
 .btn span{
-  padding: 1rem;
+  padding: 1.5rem;
   color: white;
+  font-weight: bold;
 }
 
 /*About Academy*/
-
-.practice-img{
-  display: flex;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  padding-right: 0.75rem;
-}
-
-.practice-img img{
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 .practice{
   display: flex;
   width: 60%;
@@ -146,11 +158,22 @@ nav ul li{
   justify-content: space-between;
 }
 
-.list{
+.practice h1{
+  padding: 2rem 0rem;
+}
+
+.practice-img{
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+
+.list, .thesis-list{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 40%;
+  padding-left: 1.5rem;
 }
 
 .feature-img{
@@ -158,19 +181,13 @@ nav ul li{
   height: auto;
   display: flex;
   overflow: hidden;
-  justify-content: center;
   align-items: center;
-  padding: 1rem;
-}
-
-.feature-img img{
-  max-width: 100%
 }
 
 .feature{
   display: flex;
-  border: 1px solid black;
   justify-content: space-between;
+  height: auto;
 }
 
 .feature-text{
@@ -179,6 +196,16 @@ nav ul li{
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.feature-text h2, .feature-text p, .vid-text h2, .vid-text p{
+  padding: 0.5rem 0rem;
+}
+
+.feature:hover{
+  background-color: #FEEFEA;
+  border-radius: 5px;
+  transition: background-color 0.5s linear;
 }
 
 /*Programs*/
@@ -190,7 +217,7 @@ nav ul li{
 
 #startlearning{
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 2.5rem;
 }
 
 .program-img{
@@ -198,13 +225,28 @@ nav ul li{
   height: auto;
 }
 
-.program-img img{
-  width: 100%;
-}
-
 .program-info{
   width: 30%;
   margin: 2rem 0rem;
+  background-color: white;
+}
+
+.class-list{
+  padding: 1rem 1rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.class-list h2, .class-list p{
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.class-list p{
+  opacity: 0.5;
+}
+
+#courses{
+  text-transform: uppercase;
 }
 
 /*Exhibit*/
@@ -226,11 +268,27 @@ nav ul li{
 
 .thesis{
   display: flex;
+  padding-top: 2rem;
 }
+
 /*Footer*/
 
 footer{
-  padding: 4rem 1.5rem;
+  padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid black;
+  margin: 3rem 0;
+}
+
+.terms ul{
+  display: flex;
+}
+
+.terms ul li{
+  padding: 0 0.5rem;
+}
+
+.terms li:hover{
+  opacity: 0.5;
 }
