@@ -102,6 +102,33 @@ nav ul li:hover{
   font-weight: bold;
 }
 
+.navigation-mobile{
+  display: none;
+}
+
+
+/*Mobile nav*/
+@media only screen and (max-width: 480px){
+.navigation, .divider{
+  display: none;
+}
+
+.navigation-mobile{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigation-mobile img{
+  padding: 1.5rem 1.5rem;
+  height: 2.25rem;
+}
+
+.navigation-mobile img:hover{
+  opacity: 0.5;
+}
+
+}
 /*Spotlight*/
 
 .spotlight-img{
@@ -140,6 +167,14 @@ img{
   padding: 1.5rem;
   color: white;
   font-weight: bold;
+}
+
+/*Spotlight Mobile*/
+@media only screen and (max-width: 480px){
+.content{
+  display: flex;
+  flex-direction: column;
+}
 }
 
 /*About Academy*/
@@ -200,6 +235,59 @@ img{
   font-style: italic;
 }
 
+
+/*About Mobile*/
+@media only screen and (max-width: 480px){
+.practice{
+  display: none;
+}
+.list, .thesis-list{
+  width: 100%;
+  padding-left: 0rem;
+  margin: 0 auto;
+  border-bottom: 1px solid #C9C9C9;
+}
+
+.feature-img{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.feature-img img{
+  width: 100%;
+  overflow: hidden;
+}
+
+.feature{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.feature-text{
+  width: 100%;
+  margin-left: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.feature-text h2, .feature-text p, .vid-text h2, .vid-text p{
+  padding: 0.25rem 0rem;
+}
+
+.feature:hover{
+  background-color: #FEEFEA;
+  border-radius: 5px;
+  transition: background-color 0.5s linear;
+}
+
+}
+
 /*Programs*/
 .programs{
   display: flex;
@@ -210,6 +298,7 @@ img{
 .startlearning{
   text-align: center;
   padding-top: 2.5rem;
+  padding-bottom: 2rem;
 }
 
 .program-img{
@@ -240,6 +329,48 @@ img{
   text-transform: uppercase;
 }
 
+.programs-mobile{
+  display: none;
+}
+
+/*Programs Mobile*/
+@media only screen and (max-width: 480px){
+.programs-mobile{
+  display: flex;
+  flex-direction: column;
+}
+
+.programs-desktop{
+  display: none;
+}
+
+.programs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #C9C9C9;
+}
+
+.class-list{
+  padding:1rem;
+  background-color: #C9C9C9;
+  display: flex;
+  width: 85%;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+
+.class-list:hover{
+  background-color: #EA6848;
+}
+
+.startlearning{
+  padding-top: 0;
+}
+}
+
 /*Exhibit*/
 .thesis-video{
   width: 100%;
@@ -258,6 +389,24 @@ img{
 
 .thesis-list{
   justify-content: space-around;
+}
+
+.exhibit-mobile{
+  display: none;
+}
+/*Exhibit Mobile*/
+@media only screen and (max-width: 480px){
+.exhibit-desktop{
+  display: none;
+}
+
+.exhibit-mobile{
+  display: block;
+}
+
+.vid-text{
+  width: 100%;
+}
 }
 
 /*Footer*/
@@ -280,4 +429,14 @@ footer{
 
 .terms li:hover{
   opacity: 0.5;
+}
+
+/*Footer Mobile*/
+
+.terms{
+  display: none;
+}
+
+footer{
+  justify-content: center;
 }
