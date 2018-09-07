@@ -28,7 +28,7 @@ p, span{
   line-height: 1.5rem;
 }
 
-#logo-text{
+.logo-text{
   font-size: 1.25rem;
   text-transform: uppercase;
 }
@@ -207,7 +207,7 @@ img{
   flex-wrap: wrap;
 }
 
-#startlearning{
+.startlearning{
   text-align: center;
   padding-top: 2.5rem;
 }
@@ -236,7 +236,7 @@ img{
   opacity: 0.5;
 }
 
-#courses{
+.courses{
   text-transform: uppercase;
 }
 
